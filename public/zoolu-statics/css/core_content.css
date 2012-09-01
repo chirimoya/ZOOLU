@@ -879,6 +879,37 @@ Articles */
     cursor: pointer;
 }
 
+
+/* ----------------
+SmartList Element */
+
+.smart-list-wrapper {
+    width: 100%;
+}
+
+.smart-list-wrapper .smart-list-top {
+    text-align: right;
+    background-color: #c6c6c6;
+    height: 16px;
+    margin: 2px 0 0 0;
+    padding: 2px 0 0 0;
+    border: 1px solid #c6c6c6;
+}
+
+.smart-list-wrapper .smart-list-top img {
+    border: 0;
+    vertical-align: middle;
+    margin: 0 5px 0 2px;
+    cursor: pointer;
+}
+
+.smart-list-wrapper .nodes {
+    border: 1px solid #c6c6c6;
+    min-height: 50px;
+    padding: 2px 0 10px 0;
+    background-color: #efefef;
+}
+
 /* ----------------
 Function Widget */
 

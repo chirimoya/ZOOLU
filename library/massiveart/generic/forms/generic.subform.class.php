@@ -256,8 +256,10 @@ class GenericSubForm extends Zend_Form_SubForm
                 $this->getElement($objField->name . $strNameExtension)->intFormTypeId = $this->objGenericForm->Setup()->getFormTypeId();
                 $this->getElement($objField->name . $strNameExtension)->intElementTypeId = $this->objGenericForm->Setup()->getElementTypeId();
                 $this->getElement($objField->name . $strNameExtension)->intParentTypeId = $this->objGenericForm->Setup()->getParentTypeId();
-                $this->getElement($objField->name . $strNameExtension)->intRootLevelId = $this->objGenericForm->Setup()->getRootLevelId();
             }
+
+            // general addons
+            $this->getElement($objField->name . $strNameExtension)->intRootLevelId = $this->objGenericForm->Setup()->getRootLevelId();
 
             $this->objGenericForm->fieldAddedToSubform($this->intId, $objField->name);
 

@@ -579,7 +579,21 @@ Massiveart.Form = Class.create({
       });
     }
   },
-  
+
+    updateSmartListProperties: function(property, elementId) {
+        if ($F(elementId).isJSON()) {
+            var value = $F(property),
+                property = $(property).identify().replace(elementId + '_', ''),
+                currentDefinition = $F(elementId).evalJSON();
+
+            if (typeof currentDefinition[property] !== 'undefined') {
+                currentDefinition[property] = value;
+                $(elementId).value = Object.toJSON(currentDefinition);
+            }
+
+        }
+    },
+
   /**
    * getAddTreeOverlay
    */
